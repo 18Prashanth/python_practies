@@ -10,8 +10,17 @@
 
 # Program to calculate the area of rectangle
 
-length = int(input(" Enter the length of rectangle: "))
-width = int(input(" Enter the width of rectangle: "))
-Area = length * width
-# print(f"The area of rectangle is {Area} ")
-print(Area)
+# length = int(input(" Enter the length of rectangle: "))
+# width = int(input(" Enter the width of rectangle: "))
+# Area = length * width
+# # print(f"The area of rectangle is {Area} cm")
+# print(Area)
+
+
+item = input("What item would you like to buy?: ")
+price = float(input("what is the price?: "))
+quantity = int(input("How many would you like?: "))
+total = price * quantity
+
+print(f"you have bought {quantity} x {item} /s")
+print(f" your total is: ${total}")
