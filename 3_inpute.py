@@ -13,4 +13,5 @@
 length = int(input(" Enter the length of rectangle: "))
 width = int(input(" Enter the width of rectangle: "))
 Area = length * width
-print(f"The area of rectangle is {Area} ")
+# print(f"The area of rectangle is {Area} ")
+print(Area)
