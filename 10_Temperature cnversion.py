@@ -1,5 +1,6 @@
 # Temperature convertion programme
 unit = input("Is this temperature in celsius or fahrenheit (C/F): ")
+unit = unit.upper()
 temp = float(input("Enter the temperature: "))
 
 if unit == "C":
