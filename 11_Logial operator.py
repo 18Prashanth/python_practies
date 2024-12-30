@@ -15,7 +15,7 @@
 
 # example
 
-temp = 0
+temp = 10
 is_sunny = True
 
 if temp >= 28 and is_sunny:
