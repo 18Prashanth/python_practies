@@ -5,7 +5,12 @@
 
 num = 5
 
-# print("Positive" if num > 0 else "Negative")
-result = "EVEN" if num % 2 == 0 else "ODD"
+a = 6
+b = 7
 
-print(result)
+
+# print("Positive" if num > 0 else "Negative")
+# result = "EVEN" if num % 2 == 0 else "ODD"
+max_num = a if a > b else b
+
+print(f"The maximum number is: {max_num} ")
