@@ -1,4 +1,8 @@
-print(f"The maximum number is: {max_num} ")
-print(f"The minimum number is: {min_num} ")
-print(status)
-print(wheather)
+result = len(name)
+result = name.find("a")
+result = name.rfind("a").
+result = name.capitalize()
+result = name.upper()
+result = name.lower()
+result = name.isdigit()
+result = name.isalpha()
