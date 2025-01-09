@@ -1,8 +1,3 @@
-result = len(name)
-result = name.find("a")
-result = name.rfind("a").
-result = name.capitalize()
-result = name.upper()
-result = name.lower()
-result = name.isdigit()
-result = name.isalpha()
+print(f"Price 1 is ${price1: ^10}")
+print(f"Price 2 is ${price2: ^10}")
+print(f"Price 3 is ${price3: ^10}")
