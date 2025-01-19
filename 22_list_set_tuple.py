@@ -10,5 +10,10 @@
 
 # list
 
-fruit = ["appple", "orange", "banana", "coconut"]
-print(fruit)
+fruits = ["appple", "orange", "banana", "coconut"]
+print(fruits)
+print(fruits[0])
+print(fruits[1:])
+
+for x in fruits:
+    print(x)
