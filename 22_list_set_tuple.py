@@ -5,5 +5,10 @@
 
 # collection
 
-fruit = "apple"
+# fruit = "apple"
+# print(fruit)
+
+# list
+
+fruit = ["appple", "orange", "banana", "coconut"]
 print(fruit)
