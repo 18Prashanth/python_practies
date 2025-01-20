@@ -15,15 +15,17 @@ fruits = ["appple", "orange", "banana", "coconut"]
 # print(fruits[0])
 # print(fruits[1:])
 
-# for x in fruits:
-#     print(x)
-
 # print(dir(fruits))
 
 print(len(fruits))
 print("ap" in fruits)
 
-fruits[0] = "pinapple"
+# fruits[0] = "pinapple"
+# fruits.append("apple")
+# fruits.remove("apple")
+# fruits.insert(4, "pinapple")
+# fruits.sort()
+fruits.reverse()
 
 for x in fruits:
     print(x)
