@@ -22,3 +22,8 @@ fruits = ["appple", "orange", "banana", "coconut"]
 
 print(len(fruits))
 print("ap" in fruits)
+
+fruits[0] = "pinapple"
+
+for x in fruits:
+    print(x)
