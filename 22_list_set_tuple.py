@@ -18,4 +18,7 @@ fruits = ["appple", "orange", "banana", "coconut"]
 # for x in fruits:
 #     print(x)
 
-print(dir(fruits))
+# print(dir(fruits))
+
+print(len(fruits))
+print("ap" in fruits)
