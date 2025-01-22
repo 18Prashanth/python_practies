@@ -10,7 +10,7 @@ while True:
     if food.lower() == 'q':
         break
     else:
-        price = input(f"Enter the price of a {food}: $")
+        price = int(input(f"Enter the price of a {food}: $"))
         foods.append(food)
         prices.append(price)
 
@@ -18,4 +18,10 @@ print("----YOUR CART-------")
 
 
 for food in foods:
-    print(food)
+    print(food, end=" ")
+
+for price in prices:
+    total += price
+
+print()
+print(f"Your total is: ${total}")
