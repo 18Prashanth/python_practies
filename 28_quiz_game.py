@@ -20,3 +20,6 @@ question_num = 0
 for question in questions:
     print("----------------------")
     print(question)
+    for option in oprions[question_num]:
+        print(option)
+    print()
