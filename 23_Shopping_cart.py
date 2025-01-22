@@ -13,4 +13,9 @@ while True:
         price = input(f"Enter the price of a {food}: $")
         foods.append(food)
         prices.append(price)
-print(foods)
+
+print("----YOUR CART-------")
+
+
+for food in foods:
+    print(food)
