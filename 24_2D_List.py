@@ -9,4 +9,7 @@ groceries = [["apple", "orange", "banana", "coconut"],
              ["celery", "carrots", "potatoes"], ["chicen", "fish", "turkey"]]
 
 
-print(groceries[0][1])
+for collection in groceries:
+    for food in collection:
+        print(food, end=" ")
+    print()
