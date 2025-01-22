@@ -1,9 +1,12 @@
 # 2dlist
 
-fruits = ["apple", "orange", "banana", "coconut"]
-vegetables = ["celery", "carrots", "potatoes"]
-meats = ["chicen", "fish", "turkey"]
+# fruits = ["apple", "orange", "banana", "coconut"]
+# vegetables = ["celery", "carrots", "potatoes"]
+# meats = ["chicen", "fish", "turkey"]
 
-groceries = [fruits, vegetables, meats]
 
-print(groceries[1][1])
+groceries = [["apple", "orange", "banana", "coconut"],
+             ["celery", "carrots", "potatoes"], ["chicen", "fish", "turkey"]]
+
+
+print(groceries[0][1])
