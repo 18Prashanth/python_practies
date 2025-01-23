@@ -2,12 +2,21 @@
 # ordred and changeable. No dupliactes
 
 capitals = {"USA": "washington D.C.",
-            "India": "New Delhi",
-            "China": "Beijing",
-            "Russia": "Moscow"}
+            "INDIA": "New Delhi",
+            "CHINA": "Beijing",
+            "RUSSIA": "Moscow"}
 # print(dir(capitals))
 # print(help(capitals))
-country = input("Enter the country to know the Capitals: ")
+# country = input("Enter the country to know the Capitals: ")
 
-print(capitals.get(country.capitalize()))
+# print(capitals.get(country.capitalize()))
 # print(capitals.values())
+country = ""
+
+while True:
+    country = input(
+        "Enter the country to get to Know the capital city(q to quit): ")
+    if country.lower() == 'q':
+        break
+    else:
+        print(capitals.get(country.upper()))
