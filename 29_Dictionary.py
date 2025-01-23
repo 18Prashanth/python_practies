@@ -11,12 +11,17 @@ capitals = {"USA": "washington D.C.",
 
 # print(capitals.get(country.capitalize()))
 # print(capitals.values())
-country = ""
+# print(capitals.get("USA"))
 
-while True:
-    country = input(
-        "Enter the country to get to Know the capital city(q to quit): ")
-    if country.lower() == 'q':
-        break
-    else:
-        print(capitals.get(country.upper()))
+capitals.update({"Germany": "Berlin"})
+print(capitals)
+
+
+# country = ""
+# while True:
+#     country = input(
+#         "Enter the country to get to Know the capital city(q to quit): ")
+#     if country.lower() == 'q':
+#         break
+#     else:
+#         print(capitals.get(country.upper()))
