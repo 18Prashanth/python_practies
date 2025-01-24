@@ -3,12 +3,13 @@
 import random
 
 options = ("rock", "paper", "scissors")
-
 running = True
 
 while running:
+
     player = None
     computer = random.choice(options)
+
     while player not in options:
         player = input("Enter a choice (rock, paper, scissors): ")
     print(f"Player: {player}")
@@ -25,5 +26,6 @@ while running:
     else:
         print("You loos!")
 
-    if not input("Play again? (y/n: )".lower() == "y":
-        running=False
+    if not input("Play again? (y/n): ").lower() == "y":
+        running = False
+print("Thanks for playing")
