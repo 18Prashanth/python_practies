@@ -20,31 +20,40 @@
 
 # diaplay_invoice("joeschmo", 100.01, "01/02")
 
-
+# example - 3
 # return = statement used to end a function
 # and send a result back to the caller
 
-def add(x, y):
-    z = x + y
-    return z
+# def add(x, y):
+#     z = x + y
+#     return z
+
+# def diff(x, y):
+#     z = x - y
+#     return z
+
+# def multiply(x, y):
+#     z = x * y
+#     return z
+
+# def divide(x, y):
+#     z = x / y
+#     return z
+
+# print(add(1, 2))
+# print(diff(1, 2))
+# print(multiply(1, 2))
+# print(divide(1, 2))
 
 
-def diff(x, y):
-    z = x - y
-    return z
+# example - 4
+
+def create_name(first, last):
+    first = first.capitalize()
+    last = last.capitalize()
+    return first + " " + last
 
 
-def multiply(x, y):
-    z = x * y
-    return z
+full_name = create_name("spongebob", "squarepants")
 
-
-def divide(x, y):
-    z = x / y
-    return z
-
-
-print(add(1, 2))
-print(diff(1, 2))
-print(multiply(1, 2))
-print(divide(1, 2))
+print(full_name)
