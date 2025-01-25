@@ -14,9 +14,21 @@
 # print(add(1, 2, 3))
 
 # example 2
-def display_name(*args):
-    for arg in args:
-        print(arg, end=" ")
+# def display_name(*args):
+#     for arg in args:
+#         print(arg, end=" ")
 
 
-display_name("Mr", "Prashanth", "gowda")
+# display_name("Mr", "Prashanth", "gowda")
+
+
+# ------------**kwargs-------
+def print_address(**kwargs):
+    for key in kwargs.keys():
+        print(key)
+
+
+print_address(street="Lebus street",
+              city="London",
+              state="England",
+              zip="N17 9FQ")
