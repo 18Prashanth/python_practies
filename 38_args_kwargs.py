@@ -23,12 +23,31 @@
 
 
 # ------------**kwargs-------
-def print_address(**kwargs):
-    for key in kwargs.keys():
-        print(key)
+# def print_address(**kwargs):
+#     # print(type(kwargs))
+#     for key, value in kwargs.items():
+#         print(f"{key}: {value}")
 
 
-print_address(street="Lebus street",
-              city="London",
-              state="England",
-              zip="N17 9FQ")
+# print_address(street="Lebus street",
+#               city="London",
+#               state="England",
+#               zip="N17 9FQ")
+
+def shipping_label(*args, **kwargs):
+    for arg in args:
+        print(arg, end=" ")
+    print()
+    for value in kwargs.values():
+        print(value, end=" ")
+    print()
+
+    print(f"{kwargs.get('street')}")
+    print(f"{kwargs.get('city')}, {kwargs.get('state')}, {kwargs.get('zip')}")
+
+
+shipping_label("Dr", "Prashanth", "Gowda", "III",
+               street="Lebus street",
+               city="London",
+               state="England",
+               zip="N17 9FQ")
