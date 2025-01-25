@@ -13,4 +13,13 @@
 
 # example - 2
 
-print("1", "2", "3", "4", sep="-")
+# print("1", "2", "3", "4", sep="-")
+
+# example - 3
+
+def get_phone(country, area, first, last):
+    return f"{country}-{area}-{first}-{last}"
+
+
+phone_num = get_phone(country=+91, area=974, first=740, last=4095)
+print(phone_num)
