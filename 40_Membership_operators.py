@@ -4,16 +4,33 @@
 #                        2. not in
 
 
-word = "APPLE"
+# word = "APPLE"
 
-letter = input("Guess a letter in the secret word: ").upper()
+# letter = input("Guess a letter in the secret word: ").upper()
 
-# if letter in word:
-#     print(f"There is a {letter}")
-# else:
+# # if letter in word:
+# #     print(f"There is a {letter}")
+# # else:
+# #     print(f"{letter} was not found")
+
+# if letter not in word:
 #     print(f"{letter} was not found")
+# else:
+#     print(f"There is a {letter}")
 
-if letter not in word:
-    print(f"{letter} was not found")
+
+# example 2
+students = {"Prashanth", "Gowda", "Attahalli", "Shivakumar"}
+
+student = input("Enter the name of a student: ").capitalize()
+
+# if student in students:
+#     print(f"{student} is a student")
+# else:
+#     print(f"{student} was not found")
+
+
+if student not in students:
+    print(f"{student} was not found")
 else:
-    print(f"There is a {letter}")
+    print(f"{student} is a student")
