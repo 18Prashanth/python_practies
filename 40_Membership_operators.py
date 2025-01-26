@@ -38,15 +38,23 @@
 
 # example - 3
 
-grades = {"Prashanth": "A",
-          "Gowda": "B",
-          "Attahalli": "C",
-          "Shivakumar": "D"}
+# grades = {"Prashanth": "A",
+#           "Gowda": "B",
+#           "Attahalli": "C",
+#           "Shivakumar": "D"}
 
-student = input("Enter the name of a student: ")
+# student = input("Enter the name of a student: ").capitalize()
 
 
-if student in grades:
-    print(f"{student}'s grade is {grades[student]}")
+# if student in grades:
+#     print(f"{student}'s grade is {grades[student]}")
+# else:
+#     print(f"{student} was not found")
+
+# example -
+email = input("Enter a email!: ")
+
+if "@" in email and "." in email:
+    print("valid email")
 else:
-    print(f"{student} was not found")
+    print("Invalid Emanil")
