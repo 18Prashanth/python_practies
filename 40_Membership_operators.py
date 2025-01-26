@@ -20,9 +20,9 @@
 
 
 # example 2
-students = {"Prashanth", "Gowda", "Attahalli", "Shivakumar"}
+# students = {"Prashanth", "Gowda", "Attahalli", "Shivakumar"}
 
-student = input("Enter the name of a student: ").capitalize()
+# student = input("Enter the name of a student: ").capitalize()
 
 # if student in students:
 #     print(f"{student} is a student")
@@ -30,7 +30,23 @@ student = input("Enter the name of a student: ").capitalize()
 #     print(f"{student} was not found")
 
 
-if student not in students:
-    print(f"{student} was not found")
+# if student not in students:
+#     print(f"{student} was not found")
+# else:
+#     print(f"{student} is a student")
+
+
+# example - 3
+
+grades = {"Prashanth": "A",
+          "Gowda": "B",
+          "Attahalli": "C",
+          "Shivakumar": "D"}
+
+student = input("Enter the name of a student: ")
+
+
+if student in grades:
+    print(f"{student}'s grade is {grades[student]}")
 else:
-    print(f"{student} is a student")
+    print(f"{student} was not found")
