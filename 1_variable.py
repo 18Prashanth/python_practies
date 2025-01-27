@@ -13,7 +13,7 @@ email = "prashanthatt@yahoo.com"
 
 # integer
 age = 23
-quantity = 5
+quantity = 6
 num_of_students = 20
 
 # float
