@@ -17,7 +17,7 @@ quantity = 6
 num_of_students = 20
 
 # float
-price = 20.3
+price = 20.4
 cgpa = 8.2
 
 
