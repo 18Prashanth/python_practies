@@ -18,7 +18,7 @@ num_of_students = 20
 
 # float
 price = 20.3
-cgpa = 9.2
+cgpa = 8.2
 
 
 # Boolean
