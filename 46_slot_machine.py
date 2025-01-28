@@ -74,6 +74,11 @@ def main():
 
         balance += payout
 
+        play_again = input("Do you want to spin again? (Y/N): ").upper()
+
+        if play_again != 'Y':
+            break
+
 
 if __name__ == "__main__":
     main()
