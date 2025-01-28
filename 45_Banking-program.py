@@ -9,13 +9,23 @@ def deposit():
 
     if amount < 0:
         print("Enter a valid amount")
+        return 0
     else:
         print("Your deposit is sucessfull")
         return amount
 
 
 def withdraw():
-    pass
+    amount = int(input("Enter amount to be withdraw: "))
+
+    if amount > balance:
+        print("Insufficient fund")
+        return 0
+    elif amount < 0:
+        print("Amount must be greater than 0")
+        return 0
+    else:
+        return amount
 
 
 balance = 0
@@ -36,7 +46,7 @@ while is_running:
     elif choice == '2':
         balance += deposit()
     elif choice == '3':
-        withdraw()
+        balance -= withdraw()
     elif choice == '4':
         is_running = False
     else:
