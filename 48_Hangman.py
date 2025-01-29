@@ -1,5 +1,6 @@
 # Hangman in python
 
+import random
 words = ("apple", "orange", "banana", "coconut", "pineapple")
 
 # dictionary of key:()
@@ -25,4 +26,23 @@ hangman_art = {0: ("     ",
                    " /|\\",
                    " / \\")}
 
-print(hangman_art[0])
+
+def display_man(wrong_guesses):
+    pass
+
+
+def display_hint(hint):
+    pass
+
+
+def display_answer(answer):
+    pass
+
+
+def main():
+    answer = random.choice(words)
+    print(answer)
+
+
+if __name__ == "__main__":
+    main()
