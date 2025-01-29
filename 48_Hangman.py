@@ -28,16 +28,18 @@ hangman_art = {0: ("     ",
 
 
 def display_man(wrong_guesses):
+    print("****************")
     for line in hangman_art[wrong_guesses]:
         print(line)
+    print("****************")
 
 
 def display_hint(hint):
-    pass
+    print(" ".join(hint))
 
 
 def display_answer(answer):
-    pass
+    print(" ".join(answer))
 
 
 def main():
@@ -52,6 +54,15 @@ def main():
         display_man(wrong_guesses)
         display_hint(hint)
         guess = input("Enter a letter: ").lower()
+
+        if len(guess) != 1 or not guess.isalpha():
+            print("Invalid input")
+            continue
+
+        if guess in answer:
+            for i in range(len(answer)):
+                if answer[i] == guess:
+                    hint[i] = guess
 
 
 if __name__ == "__main__":
