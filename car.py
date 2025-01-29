@@ -10,3 +10,6 @@ class car:
 
     def stop(self):
         print(f"You stop the {self.model}")
+
+    def describe(self):
+        print(f"{self.year} {self.color} {self.model}")
