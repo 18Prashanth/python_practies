@@ -11,50 +11,30 @@ class Animal:
         print(f"{self.name} is eating")
 
     def sleep(self):
-        print(f"{self.name} is sleeping")
+        print(f"{self.name} is asleep")
 
 
 class dog(Animal):
-    def __init__(self, name):
-        self.name = name
-        self.is_alive = True
-
-    def eat(self):
-        print(f"{self.name} is eating")
-
-    def sleep(self):
-        print(f"{self.name} is asleep")
+    def speak(slef):
+        print("WOOF!")
 
 
 class cat(Animal):
-    def __init__(self, name):
-        self.name = name
-        self.is_alive = True
-
-    def eat(self):
-        print(f"{self.name} is eating")
-
-    def sleep(self):
-        print(f"{self.name} is asleep")
+    def speak(slef):
+        print("MEOW!")
 
 
 class mouse(Animal):
-    def __init__(self, name):
-        self.name = name
-        self.is_alive = True
-
-    def eat(self):
-        print(f"{self.name} is eating")
-
-    def sleep(self):
-        print(f"{self.name} is asleep")
+    def speak(slef):
+        print("SQUEEK!")
 
 
 dog = dog("Scooby")
 cat = cat("Garfield")
 mouse = mouse("Mickey")
 
-print(mouse.name)
-print(mouse.is_alive)
-mouse.eat()
-mouse.sleep()
+print(dog.name)
+print(dog.is_alive)
+dog.eat()
+dog.sleep()
+dog.speak()
