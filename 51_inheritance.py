@@ -15,20 +15,46 @@ class Animal:
 
 
 class dog(Animal):
-    pass
+    def __init__(self, name):
+        self.name = name
+        self.is_alive = True
+
+    def eat(self):
+        print(f"{self.name} is eating")
+
+    def sleep(self):
+        print(f"{self.name} is asleep")
 
 
 class cat(Animal):
-    pass
+    def __init__(self, name):
+        self.name = name
+        self.is_alive = True
+
+    def eat(self):
+        print(f"{self.name} is eating")
+
+    def sleep(self):
+        print(f"{self.name} is asleep")
 
 
 class mouse(Animal):
-    pass
+    def __init__(self, name):
+        self.name = name
+        self.is_alive = True
+
+    def eat(self):
+        print(f"{self.name} is eating")
+
+    def sleep(self):
+        print(f"{self.name} is asleep")
 
 
 dog = dog("Scooby")
 cat = cat("Garfield")
 mouse = mouse("Mickey")
 
-print(dog.name)
-print(dog.is_alive)
+print(mouse.name)
+print(mouse.is_alive)
+mouse.eat()
+mouse.sleep()
