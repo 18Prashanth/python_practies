@@ -10,20 +10,20 @@ class Animal:
         self.name = name
 
     def eat(self):
-        print(f"This {self.name} is eating")
+        print(f"{self.name} is eating")
 
     def sleep(self):
-        print(f"This {self.name} is sleeping")
+        print(f"{self.name} is sleeping")
 
 
 class prey(Animal):
     def flee(self):
-        print(f"This {self.name} is fleeing")
+        print(f"{self.name} is fleeing")
 
 
 class Predator(Animal):
     def hunt(self):
-        print(f"This {self.name} is hunting")
+        print(f"{self.name} is hunting")
 
 
 class Rabbit(prey):
@@ -42,4 +42,4 @@ rabbit = Rabbit("Bugs")
 hawk = Hawk("Tony")
 fish = Fish("Nemo")
 
-rabbit.eat()
+rabbit.flee()
