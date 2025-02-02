@@ -18,4 +18,11 @@ class Employee:
         return position in valid_positions
 
 
-print(Employee.is_valid_position("cook"))
+employee1 = Employee("Shivakumar", "Manager")
+employee2 = Employee("Prashanth", "Cashier")
+employee3 = Employee("Shama", "Cook")
+
+print(Employee.is_valid_position("Rook scientiest"))
+print(employee1.get_info())
+print(employee2.get_info())
+print(employee3.get_info())
