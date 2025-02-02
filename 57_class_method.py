@@ -24,7 +24,7 @@ class Student:
         if cls.count == 0:
             return 0
         else:
-            return f"{cls.total_gpa / cls.count}"
+            return f"Average GPA: {cls.total_gpa / cls.count}"
 
 
 student1 = Student("Prashanth", 3.2)
