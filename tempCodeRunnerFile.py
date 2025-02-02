@@ -1,1 +1,2 @@
-m that class
+ def get_count(cls):
+        return f"Total # of students: {cls.count}"
