@@ -1,19 +1,56 @@
 # super() = Function used in a child class to call methods from a parents class (superclass).
 # Allows you to extend the functionality of the inherited menthods
 
-class Circle:
-    def __init__(self, color, filled, radius):
+class shape:
+    def __init__(self, color, is_filled):
         self.color = color
-        self.filled = filled
+        self.is_filled = is_filled
+
+    def describe(self):
+        print(f"It is {self.color} and {
+              'filled' if self.is_filled else 'not filled'} ")
+
+
+class Circle(shape):
+    def __init__(self, color, is_filled, radius):
+        super().__init__(color, is_filled)
         self.radius = radius
 
+    def describe(self):
+        print(f"It is a circle with an area of {
+              3.14 * self.radius*self.radius}cm^2")
+        super().describe()
 
-class Square:
-    def __init__(self, color, filled, width):
-        self.color = color
-        self.filled = filled
+
+class Square(shape):
+    def __init__(self, color, is_filled, width):
+        super().__init__(color, is_filled)
         self.width = width
 
+    def describe(self):
+        print(f"It is a square with an area of {
+              self.width * self.width}cm^2")
+        super().describe()
 
-class Triangle:
-    pass
+
+class Triangle(shape):
+    def __init__(self, color, is_filled, width, height):
+        super().__init__(color, is_filled)
+        self.width = width
+        self.height = height
+
+    def describe(self):
+        print(f"It is a Triangle with an area of {
+              self.width * self.height / 2}cm^2")
+        super().describe()
+
+
+circle = Circle(color="red", is_filled=True, radius=5)
+square = Square(color="blue", is_filled=False, width=6)
+triangle = Triangle(color="Yellow", is_filled=True, width=7, height=8)
+
+circle.describe()
+print()
+square.describe()
+print()
+triangle.describe()
