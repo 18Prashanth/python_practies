@@ -11,3 +11,5 @@ except ValueError:
     print("Enter only numbers please")
 except Exception:
     print("Somethimg went wrong")
+finally:
+    print("Do some cleanup here")
