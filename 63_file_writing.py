@@ -20,7 +20,7 @@ file_path = "C:/Users/Admin/OneDrive/Desktop/test/test3.csv"
 try:
     # if we open a file 'with' its atuomatically close the file
     with open(file_path, "w", newline="") as file:
-        # json.dump(employee, file, indent=4)
+        # json.dump(employees, file, indent=4)
         writer = csv.writer(file)
         for row in employee:
             writer.writerow(row)
