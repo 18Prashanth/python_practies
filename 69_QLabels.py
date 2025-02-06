@@ -18,8 +18,19 @@ class MainWindow(QMainWindow):
                             "font-style: italic;"
                             "text-decoration: underline;")
 
-        label.setAlignment(Qt.AlignTop)  # VERTICALLY TOP
+        # label.setAlignment(Qt.AlignTop)  # VERTICALLY TOP
+        # label.setAlignment(Qt.AlignBottom)  # VERTICALLY BOTTOM
+        # label.setAlignment(Qt.AlignVCenter)  # VERTICALLY CENTER
 
+        # label.setAlignment(Qt.AlignRight)  # HORIZANTALLY RIGHT
+        # label.setAlignment(Qt.AlignHCenter)  # HORIZANTALLY CENTER
+        # label.setAlignment(Qt.AlignLeft)  # HORIZANTALLY LEFT
+
+        # label.setAlignment(Qt.AlignHCenter | Qt.AlignTop) #CENTER & TOP
+        # label.setAlignment(Qt.AlignHCenter | Qt.AlignBottom)  # CENTER & BOTTOM
+        # label.setAlignment(Qt.AlignHCenter | Qt.AlignVCenter) # CENTER & CENTER
+        label.setAlignment(Qt.AlignCenter)  # CENTER & CENTER
+# 
 
 def main():
     app = QApplication(sys.argv)
