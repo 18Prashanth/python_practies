@@ -9,7 +9,7 @@ class MainWindow(QMainWindow):
         super().__init__()
         self.setWindowTitle("My cool first GUI")
         self.setGeometry(700, 300, 500, 500)
-        self.setWindowIcon(QIcon("profile.jpg"))
+        self.setWindowIcon(QIcon("prashanth.pngq"))
 
 
 def main():
