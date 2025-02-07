@@ -26,15 +26,15 @@ class MainWindow(QMainWindow):
         label4.setStyleSheet("background-color:blue;")
         label5.setStyleSheet("background-color:purple;")
 
-        vbox = QVBoxLayout()
+        grid = QGridLayout()
 
-        vbox.addWidget(label1)
-        vbox.addWidget(label2)
-        vbox.addWidget(label3)
-        vbox.addWidget(label4)
-        vbox.addWidget(label5)
+        grid.addWidget(label1, 0, 0)
+        grid.addWidget(label2, 0, 1)
+        grid.addWidget(label3, 1, 0)
+        grid.addWidget(label4, 1, 1)
+        grid.addWidget(label5, 2, 2)
 
-        central_widget.setLayout(vbox)
+        central_widget.setLayout(grid)
 
 
 def main():
