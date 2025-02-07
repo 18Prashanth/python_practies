@@ -6,16 +6,20 @@ class MainWindow(QMainWindow):
     def __init__(self):
         super().__init__()
         self.setGeometry(700, 300, 500, 500)
+        self.button = QPushButton("Click me!", self)
+        self.label = QLabel("Hello", self)
         self.initUI()
 
     def initUI(self):
-        button = QPushButton("Click me!", self)
-        button.setGeometry(150, 200, 200, 100)
-        button.setStyleSheet("font-size:30px;")
-        button.clicked.connect(self.on_click)
+        self.button.setGeometry(150, 200, 200, 100)
+        self.button.setStyleSheet("font-size: 30px;")
+        self.button.clicked.connect(self.on_click)
+
+        self.label.setGeometry(150, 300, 200, 100)
+        self.label.setStyleSheet("font-size: 40px;")
 
     def on_click(self):
-        print("Button clicked")
+        self.label.setText("Good Bye!")
 
 
 def main():
