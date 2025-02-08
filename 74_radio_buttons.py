@@ -33,6 +33,16 @@ class MainWindow(QMainWindow):
         self.button_group2.addButton(self.radio3)
         self.button_group2.addButton(self.radio4)
 
+        self.radio1.toggled.connect(self.radio_button_changed)
+        self.radio2.toggled.connect(self.radio_button_changed)
+        self.radio3.toggled.connect(self.radio_button_changed)
+        self.radio4.toggled.connect(self.radio_button_changed)
+
+    def radio_button_changed(self):
+        radio_button = self.sender()
+        if radio_button.isChecked():
+            print(f"{radio_button.text()} is selected")
+
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)
