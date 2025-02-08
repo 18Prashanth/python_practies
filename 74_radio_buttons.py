@@ -1,0 +1,34 @@
+# PyQt5 radio buttons
+
+import sys
+from PyQt5.QtWidgets import QApplication, QMainWindow, QRadioButton, QButtonGroup
+
+
+class MainWindow(QMainWindow):
+    def __init__(self):
+        super().__init__()
+        self.setGeometry(700, 300, 500, 500)
+        self.radio1 = QRadioButton("visa", self)
+        self.radio2 = QRadioButton("Master Card", self)
+        self.radio3 = QRadioButton("Gift Card", self)
+        self.radio4 = QRadioButton("Pay Pal", self)
+        self.initUI()
+
+    def initUI(self):
+        self.radio1.setGeometry(0, 0, 300, 50)
+        self.radio2.setGeometry(0, 50, 300, 50)
+        self.radio3.setGeometry(0, 100, 300, 50)
+        self.radio4.setGeometry(0, 150, 300, 50)
+
+        self.setStyleSheet("QRadioButton{"
+                           "font-size: 40px;"
+                           "font-family: Arial;"
+                           "padding: 10px;"
+                           "}")
+
+
+if __name__ == "__main__":
+    app = QApplication(sys.argv)
+    window = MainWindow()
+    window.show()
+    sys.exit(app.exec_())
